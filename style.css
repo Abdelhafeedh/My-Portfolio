@@ -113,7 +113,10 @@ input{
     text-transform: lowercase;
 }
 #email{
-    text-transform:lowercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-transform: lowercase;
+    text-align: center;
 }
 #fav{
     margin: 10px;
@@ -135,4 +138,47 @@ input{
     color: black;
     font-size: 100px;
     text-align: center;
+}
+@media (max-width: 600px) { 
+    
+nav{
+    text-align: center;
+    margin: 0;
+}
+nav ul{
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+}
+ li{
+    list-style-type: none;
+    text-align:center;
+    background-color: white;
+    color:teal;
+    margin: 0;
+    padding: 0;
+}
+}  
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+div img{
+    width: 400px;
+    height: 300px;
+    border: 2px solid #ff3d0036;
+    border-radius: 13px;
+    box-shadow: 4px 7px 7px 0px #00000042;
+    cursor: pointer;
+    margin: 10px;
+    transition: 400ms;
+}
+div img:hover {
+    filter: grayscale(1);
+    transform: scale(1.03);
+}
+#email{
+    width: 10px;
 }
